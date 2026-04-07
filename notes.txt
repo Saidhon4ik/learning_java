@@ -5,3 +5,5 @@ I love apple
 I love bananas
 I love chips
 I love ice
+I love dogs
+I love cat
