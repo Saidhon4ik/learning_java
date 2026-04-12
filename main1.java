@@ -75,7 +75,10 @@ public class main1{
             System.out.println("Symbols: 🍒🍉🍋⭐🔔");
             System.out.println("***********************");
             
-            
+            while(balance > 0)
+            {
+                System.out.print("Current balance: ");
+            }
 
         scanner.close();
         }
