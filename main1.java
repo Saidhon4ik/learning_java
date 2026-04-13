@@ -1,11 +1,4 @@
-// //rock  paper scissors
-// import java.util.Scanner;
-// import java.util.Random;
-// public class main1{
-//     public static void main(String[] args)
-//     {
-//         try(Scanner scanner = new Scanner(System.in))
-//         {
+
 
 //             Random random = new Random();
 
@@ -57,30 +50,15 @@
 // }
 
 
-import java.util.Scanner;
+//OOP
 public class main1{
     public static void main(String[] args)
     {
-        //Java slot machine
-        try
-        (Scanner scanner = new Scanner(System.in))
-        {
-            int balance = 100;
-            int bet;
-            int payout;
-            String[] row;   
+        Car car = new Car();
+        System.out.print(car.model);
+        System.out.print(car.price);
+        System.out.print(car.year);
+        System.out.print(car.make);
 
-            System.out.println("***********************");
-            System.out.println(" Welcome to java slots ");
-            System.out.println("Symbols: 🍒🍉🍋⭐🔔");
-            System.out.println("***********************");
-            
-            while(balance > 0)
-            {
-                System.out.print("Current balance: ");
-            }
-
-        scanner.close();
-        }
     }
 }
