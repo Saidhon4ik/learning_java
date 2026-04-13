@@ -50,15 +50,67 @@
 // }
 
 
-//OOP
+// //OOP
+// public class main1{
+//     public static void main(String[] args)
+//     {
+//         // Car car1 = new Car();
+//         // Car car2 = new Car();
+//         // System.out.println(car1.model);
+//         // System.out.println(car1.price);
+//         // System.out.println(car1.year);
+//         // System.out.println(car1.make);
+//         // System.out.println(car1.isRunning);
+
+//         // car1.start();
+//         // car1.stop();
+        
+//         // car1.drive();
+//         // car1.brake();
+
+//         // System.out.println(car1.make + " " + car1.model);
+//         // System.out.println(car2.make + " " + car2.model);
+
+//     }
+// }
+
+
+
+
+//Constructors
 public class main1{
     public static void main(String[] args)
     {
-        Car car = new Car();
-        System.out.print(car.model);
-        System.out.print(car.price);
-        System.out.print(car.year);
-        System.out.print(car.make);
+        Student student1 = new Student("Spongebob", 30,3.2);
+        Student student2 = new Student("Patrick", 34, 1.5);
+        Student student3 = new Student("Sandy",27,4.0);
 
+        System.out.println(student1.name);
+        System.out.println(student1.age);
+        System.out.println(student1.gpa);
+        System.out.println(student1.isEnrolled);
+        
+        System.out.println();
+        
+        System.out.println(student2.name);
+        System.out.println(student2.age);
+        System.out.println(student2.gpa);
+        System.out.println(student2.isEnrolled);
+        
+        System.out.println();
+
+        System.out.println(student3.name);
+        System.out.println(student3.age);
+        System.out.println(student3.gpa);
+        System.out.println(student3.isEnrolled);
+        
+        System.out.println();
+
+        student1.study();
+        student2.study();
+        student3.study();
+
+
+        
     }
 }
