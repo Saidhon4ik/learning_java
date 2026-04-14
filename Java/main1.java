@@ -50,19 +50,21 @@
 // }
 
 
-//OOP
-public class main1{
-    public static void main(String[] args)
-    {
-        Car car1 = new Car();
-        Car car2 = new Car();
-        System.out.println(car1.model);
-
+// //OOP
+// public class main1{
+//     public static void main(String[] args)
+//     {
+//         Car car1 = new Car("Mers","Red");
+//         Car car2 = new Car("Nexia", "black");
+//         System.out.println(car1.model);
+//         System.out.println(car2.model);
+// ;
         
-        car1.drive();
-        car1.brake();
-    }
-}
+//         car1.drive();
+//         car1.brake();
+
+//     }
+// }
 
 
 
