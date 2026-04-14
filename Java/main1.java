@@ -50,29 +50,19 @@
 // }
 
 
-// //OOP
-// public class main1{
-//     public static void main(String[] args)
-//     {
-//         // Car car1 = new Car();
-//         // Car car2 = new Car();
-//         // System.out.println(car1.model);
-//         // System.out.println(car1.price);
-//         // System.out.println(car1.year);
-//         // System.out.println(car1.make);
-//         // System.out.println(car1.isRunning);
+//OOP
+public class main1{
+    public static void main(String[] args)
+    {
+        Car car1 = new Car();
+        Car car2 = new Car();
+        System.out.println(car1.model);
 
-//         // car1.start();
-//         // car1.stop();
         
-//         // car1.drive();
-//         // car1.brake();
-
-//         // System.out.println(car1.make + " " + car1.model);
-//         // System.out.println(car2.make + " " + car2.model);
-
-//     }
-// }
+        car1.drive();
+        car1.brake();
+    }
+}
 
 
 
@@ -180,16 +170,47 @@
 
 
 
-//static keyword, what is it
-public class main1{
-    public static void main(String[] args)
-    {
-        Friend friend1 = new Friend("Spongebob");
-        Friend friend2 = new Friend("Patrick");
-        System.out.println(friend1.name);
-        System.out.println(friend2.name);
+// //static keyword, what is it
+// public class main1{
+//     public static void main(String[] args)
+//     {
+//         Friend friend1 = new Friend("Spongebob");
+//         Friend friend2 = new Friend("Patrick");
+//         System.out.println(friend1.name);
+//         System.out.println(friend2.name);
 
-        System.out.println(Friend.numOfFriends);
-        Friend.showFriends();
-    }
-}
+//         System.out.println(Friend.numOfFriends);
+//         Friend.showFriends();
+//     }
+// 
+
+
+//inheritance
+// public class main1{
+//     public static void main(String[] args)
+//     {   
+//         Dog dog = new Dog();
+//         Cat cat = new Cat();
+//         Plant plant = new Plant();
+        
+//         System.out.println(dog.isAlive);
+//         System.out.println(cat.isAlive);
+//         System.out.println(plant.isAlive);
+//         System.out.println();
+
+//         dog.eat();
+//         cat.eat();
+//         plant.photosynthesize();
+//         System.out.println();
+
+//         System.out.println(dog.lives);
+//         System.out.println(cat.lives);
+//         System.out.println();
+
+        
+//    }
+// }
+
+
+
+//Super 
