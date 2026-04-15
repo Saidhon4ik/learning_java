@@ -216,20 +216,29 @@
 
 
 
+// public class main1{
+//     public static void main(String [] args)
+//     {
+//         //Super shit, refers to the parent class subclass < superclass
+//         //like parent is always right l🤣
+//         Person person = new Person("Tom", "Riddle");
+//         Students student = new Students("Harry", "Potter", 3.25);
+//         Employee employee = new Employee("Asteroid", "Destroyer", 1000);
+//         person.showName();
+
+//         student.showName();
+//         student.showGpa();
+
+//         employee.showName();
+//         employee.showSalary();
+//     }
+// }
+
+
+//method overriding
 public class main1{
-    public static void main(String [] args)
+    public static void main(String[] args)
     {
-        //Super shit, refers to the parent class subclass < superclass
-        //like parent is always right l🤣
-        Person person = new Person("Tom", "Riddle");
-        Students student = new Students("Harry", "Potter", 3.25);
-        Employee employee = new Employee("Asteroid", "Destroyer", 1000);
-        person.showName();
-
-        student.showName();
-        student.showGpa();
-
-        employee.showName();
-        employee.showSalary();
+        //
     }
 }
