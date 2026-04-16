@@ -323,33 +323,53 @@
 //     }
 // }
 
-import java.util.Scanner;
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String[] args)
+//     {
+//         Scanner scanner = new Scanner(System.in);
+
+//         Aniimal aniimal;
+
+//         System.out.print("Would you like a dog or a cat?(1 = dog, 2 = cat): ");
+//         int choice = scanner.nextInt();
+
+//         if(choice == 1)
+//         {
+//             aniimal = new D0g();
+//             aniimal.speak();
+//         }
+//         else if(choice == 2)
+//         {
+//             aniimal = new Kitty();
+//             aniimal.speak();
+//         }
+//         else
+//         {
+//             System.out.println("You have to choose 1 or 2, please");
+//         }
+
+
+//         scanner.close();
+//     }
+// }
+
+
+
+
+
+
+
+//Getters and setters
 public class Main{
     public static void main(String[] args)
     {
-        Scanner scanner = new Scanner(System.in);
+        Caaar caaar = new Caaar("Charger", "yellow", 10000);
+        System.out.print(caaar.getModel() + " " + caaar.getColor() + " " + caaar.getPrice());
 
-        Aniimal aniimal;
+        // caaar.model = "Corverette";
+        
 
-        System.out.print("Would you like a dog or a cat?(1 = dog, 2 = cat): ");
-        int choice = scanner.nextInt();
-
-        if(choice == 1)
-        {
-            aniimal = new D0g();
-            aniimal.speak();
-        }
-        else if(choice == 2)
-        {
-            aniimal = new Kitty();
-            aniimal.speak();
-        }
-        else
-        {
-            System.out.println("You have to choose 1 or 2, please");
-        }
-
-
-        scanner.close();
     }
+
 }
