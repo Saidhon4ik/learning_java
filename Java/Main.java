@@ -283,20 +283,20 @@
 // }
 
 
-// public class Main{
-//     public static void main(String[] args)
-//     {
-//         //Interface
-//         Rabbit rabbit = new Rabbit();
-//         Hawk hawk = new Hawk();
-//         F1sh fish = new F1sh();
+public class Main{
+    public static void main(String[] args)
+    {
+        //Interface
+        Rabbit rabbit = new Rabbit();
+        Hawk hawk = new Hawk();
+        F1sh fish = new F1sh();
     
-//         rabbit.flee();
-//         hawk.hunt();
+        rabbit.flee();
+        hawk.hunt();
 
-//         fish.hunt();
-//         fish.flee();    
+        fish.hunt();
+        fish.flee();    
         
 
-//     }
-// }
+    }
+}
