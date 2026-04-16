@@ -314,5 +314,11 @@ public class Main{
         caar.go();
         boat.go();
 
+        Vehicle[] vehicles = {caar,bike , boat};
+
+        for(Vehicle vehicle : vehicles)
+        {
+            vehicle.go();
+        }
     }
 }
