@@ -283,20 +283,36 @@
 // }
 
 
+// public class Main{
+//     public static void main(String[] args)
+//     {
+//         //Interface
+//         Rabbit rabbit = new Rabbit();
+//         Hawk hawk = new Hawk();
+//         F1sh fish = new F1sh();
+    
+//         rabbit.flee();
+//         hawk.hunt();
+
+//         fish.hunt();
+//         fish.flee();    
+        
+
+//     }
+// }
+
+
 public class Main{
     public static void main(String[] args)
     {
-        //Interface
-        Rabbit rabbit = new Rabbit();
-        Hawk hawk = new Hawk();
-        F1sh fish = new F1sh();
-    
-        rabbit.flee();
-        hawk.hunt();
+        //Polymorphysm
+        Caar caar = new Caar();
+        Boat boat = new Boat();
+        Bike bike = new Bike();
 
-        fish.hunt();
-        fish.flee();    
-        
+        bike.go();
+        caar.go();
+        boat.go();
 
     }
 }
