@@ -400,17 +400,67 @@
 
 
 
+// public class Main{
+//     public static void main(String[] args)
+//     //composition - "part-of" relationship
+//     //Engine is part of a car
+//     {
+//         Caaaar caaaar = new Caaaar("Corvette", 2025, "V8");
+
+
+//         System.out.println(caaaar.model);
+//         System.out.println(caaaar.year);
+//         System.out.println(caaaar.engine.type);
+        
+//         caaaar.start();
+//     }
+// } 
+
+
 public class Main{
     public static void main(String[] args)
-    //composition - "part-of" relationship
     {
-        Caaaar caaaar = new Caaaar("Corvette", 2025, "V8");
+        //Wrapper classes = allow primitives(int char double boolean)
+        //to be used a objects
 
 
-        System.out.println(caaaar.model);
-        System.out.println(caaaar.year);
-        System.out.println(caaaar.engine.type);
+
+        // //Autoboxin is used nowadays >>
+        // Integer a = 123;
+        // Double b = 3.14;
+        // Character c = '$';
+        // Boolean d = true;
+        // String e = "Pizza";
+
+
+
+        // //Unboxing
+        // int x = a;
+        // double y = b;
+        // char z = c;
+        // boolean i = d;
+        // String j = e;
+
+
+        // System.out.println(x);
+        // System.out.println(y);
+        // System.out.println(z);
+        // System.out.println(i);
+        // System.out.println(j);
+
+        String a = Integer.toString(123);
+        String b = Double.toString(3.14);
+        String c = Character.toString('@');
+        String d = Boolean.toString(false);
+
+
+        //'undo' it 
+        int e = Integer.parseInt("123");
+        double f = Double.parseDouble("3.14");
+        char g = "Pizza".charAt(0); //unrelated to wrapper class XD
+        boolean h = Boolean.parseBoolean("true");
         
-        caaaar.start();
+        String x = a+b+c+d;
+        System.out.println(x);
     }
-} 
+}
