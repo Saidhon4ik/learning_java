@@ -60,6 +60,3 @@ Most of them are commented out and can be tested individually.
    ```bash
    javac Main.java
 
-
-сюда можешь эмодзи всякие добавить, чтобы казалось более живым
-
