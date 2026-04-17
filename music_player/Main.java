@@ -8,7 +8,7 @@ import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
-public class Main1{
+public class Main{
     public static void main(String[] args)
     {
         //audio player (supported only for .wav    .au    .aiff)
