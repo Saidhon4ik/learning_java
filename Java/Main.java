@@ -417,50 +417,54 @@
 // } 
 
 
-public class Main{
-    public static void main(String[] args)
-    {
-        //Wrapper classes = allow primitives(int char double boolean)
-        //to be used a objects
 
 
 
-        // //Autoboxin is used nowadays >>
-        // Integer a = 123;
-        // Double b = 3.14;
-        // Character c = '$';
-        // Boolean d = true;
-        // String e = "Pizza";
+
+// public class Main{
+//     public static void main(String[] args)
+//     {
+//         //Wrapper classes = allow primitives(int char double boolean)
+//         //to be used a objects
 
 
 
-        // //Unboxing
-        // int x = a;
-        // double y = b;
-        // char z = c;
-        // boolean i = d;
-        // String j = e;
+//         // //Autoboxin is used nowadays >>
+//         // Integer a = 123;
+//         // Double b = 3.14;
+//         // Character c = '$';
+//         // Boolean d = true;
+//         // String e = "Pizza";
 
 
-        // System.out.println(x);
-        // System.out.println(y);
-        // System.out.println(z);
-        // System.out.println(i);
-        // System.out.println(j);
 
-        String a = Integer.toString(123);
-        String b = Double.toString(3.14);
-        String c = Character.toString('@');
-        String d = Boolean.toString(false);
+//         // //Unboxing
+//         // int x = a;
+//         // double y = b;
+//         // char z = c;
+//         // boolean i = d;
+//         // String j = e;
 
 
-        //'undo' it 
-        int e = Integer.parseInt("123");
-        double f = Double.parseDouble("3.14");
-        char g = "Pizza".charAt(0); //unrelated to wrapper class XD
-        boolean h = Boolean.parseBoolean("true");
+//         // System.out.println(x);
+//         // System.out.println(y);
+//         // System.out.println(z);
+//         // System.out.println(i);
+//         // System.out.println(j);
+
+//         String a = Integer.toString(123);
+//         String b = Double.toString(3.14);
+//         String c = Character.toString('@');
+//         String d = Boolean.toString(false);
+
+
+//         //'undo' it 
+//         int e = Integer.parseInt("123");
+//         double f = Double.parseDouble("3.14");
+//         char g = "Pizza".charAt(0); //unrelated to wrapper class XD
+//         boolean h = Boolean.parseBoolean("true");
         
-        String x = a+b+c+d;
-        System.out.println(x);
-    }
-}
+//         String x = a+b+c+d;
+//         System.out.println(x);
+//     }
+// }
