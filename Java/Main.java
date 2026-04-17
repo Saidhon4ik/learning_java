@@ -502,33 +502,68 @@
 //     }
 // }
 
-//exercise for ArrayList
+// //exercise for ArrayList
 
-import java.util.ArrayList;
+// import java.util.ArrayList;
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String[] args)
+//     {
+//         int numOfFruit;
+//         Scanner scanner = new Scanner(System.in);
+
+//         ArrayList<String> foods = new ArrayList<>();
+//         System.out.print("Enter the number of food you would like: ");
+//         numOfFruit = scanner.nextInt();
+//         scanner.nextLine();
+
+//         for(int i = 1; i <= numOfFruit; i++)
+//         {
+//             System.out.print("Enter food #" + i + " : ");
+//             String food = scanner.nextLine();
+//             foods.add(food);
+//         }   
+
+//         for(String food: foods)
+//         {
+//             System.out.println(food);
+//         }
+
+//         scanner.close();
+//     }
+// }
+
+
+//Exceptions
+import java.util.InputMismatchException;
 import java.util.Scanner;
 public class Main{
     public static void main(String[] args)
     {
-        int numOfFruit;
         Scanner scanner = new Scanner(System.in);
 
-        ArrayList<String> foods = new ArrayList<>();
-        System.out.print("Enter the number of food you would like: ");
-        numOfFruit = scanner.nextInt();
-        scanner.nextLine();
 
-        for(int i = 1; i <= numOfFruit; i++)
-        {
-            System.out.print("Enter food #" + i + " : ");
-            String food = scanner.nextLine();
-            foods.add(food);
-        }   
 
-        for(String food: foods)
+        try{
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        System.out.println(number);
+        }
+        catch(InputMismatchException e){
+            System.out.println("You have to enter integer buddy");
+        }
+        catch(ArithmeticException e)
         {
-            System.out.println(food);
+            System.out.println("You cannot divide by a zero, bruh");
+        }
+        catch(Exception e)
+        {   
+            //Safety net
+            System.out.println("Something went wrong!");
         }
 
+        finally{
         scanner.close();
+        }
     }
 }
