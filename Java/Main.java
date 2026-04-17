@@ -534,36 +534,77 @@
 // }
 
 
-//Exceptions
-import java.util.InputMismatchException;
-import java.util.Scanner;
-public class Main{
+// //Exceptions
+// import java.util.InputMismatchException;
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String[] args)
+//     {
+//         Scanner scanner = new Scanner(System.in);
+
+
+
+//         try{
+//         System.out.print("Enter a number: ");
+//         int number = scanner.nextInt();
+//         System.out.println(number);
+//         }
+//         catch(InputMismatchException e){
+//             System.out.println("You have to enter integer buddy");
+//         }
+//         catch(ArithmeticException e)
+//         {
+//             System.out.println("You cannot divide by a zero, bruh");
+//         }
+//         catch(Exception e)
+//         {   
+//             //Safety net
+//             System.out.println("Something went wrong!");
+//         }
+
+//         finally{
+//         scanner.close();
+//         }
+//     }
+// }
+
+
+
+//Writing files
+
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
     public static void main(String[] args)
     {
-        Scanner scanner = new Scanner(System.in);
+        //FileWriter = small - medium files
+        //Buffered Writer = for large files
+        //Print Writed =  best for structured data, like logs or reports
+        //FileOutputStream = Best for binary files(e.g photos, images, audio files)
 
+        // String filePath;
+        // String textContent = "I like pizza \n It is really good";
+        String textContent = """
+                Roses are red
+                Violets are blue
+                Why do i have such a head
+                I have no clue🤣
+                """;
 
-
-        try{
-        System.out.print("Enter a number: ");
-        int number = scanner.nextInt();
-        System.out.println(number);
-        }
-        catch(InputMismatchException e){
-            System.out.println("You have to enter integer buddy");
-        }
-        catch(ArithmeticException e)
+        try(FileWriter writer = new FileWriter("test.txt");)
         {
-            System.out.println("You cannot divide by a zero, bruh");
+            writer.write(textContent);
+            System.out.println("File has been written!");
         }
-        catch(Exception e)
-        {   
-            //Safety net
-            System.out.println("Something went wrong!");
+        
+        catch(FileNotFoundException e)
+        {
+            System.out.println("Could not locate file location!");
         }
-
-        finally{
-        scanner.close();
+        catch(IOException e){
+            System.out.println("Could not write file");
         }
     }
 }
