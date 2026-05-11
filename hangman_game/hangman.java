@@ -1,4 +1,4 @@
-public class Main{
+public class hangman{
   public static void main(String[] args)
   {
     //
